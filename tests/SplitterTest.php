@@ -18,5 +18,4 @@ class SplitterTest extends TestCase
             $splitter->split()
         );
     }
-
 }
