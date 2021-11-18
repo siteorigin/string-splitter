@@ -1,36 +1,37 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "siteorigin/string-splitter",
+    "description": "Splits strings into separate words. Useful for domain names.",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "siteorigin",
+        "string-splitter"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/siteorigin/string-splitter",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Greg Priday",
+            "email": "greg@siteorigin.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "illuminate/collections": "^8.68"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
-        "pestphp/pest": "^1.20",
+        "phpunit/phpunit": "^9",
         "spatie/ray": "^1.28",
         "vimeo/psalm": "^4.8"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "SiteOrigin\\StringSplitter\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "SiteOrigin\\StringSplitter\\Tests\\": "tests"
         }
     },
     "scripts": {
