@@ -1,4 +1,4 @@
-# Splits strings into separate words. Useful for domain names.
+# Splits strings into separate words.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/siteorigin/string-splitter.svg?style=flat-square)](https://packagist.org/packages/siteorigin/string-splitter)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/siteorigin/string-splitter/run-tests?label=tests)](https://github.com/siteorigin/string-splitter/actions?query=workflow%3ATests+branch%3Amaster)
