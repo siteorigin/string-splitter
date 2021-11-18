@@ -34,7 +34,7 @@ class StringSplitter
      *
      * @return array
      */
-    public function words(): array
+    public function split(): array
     {
         $string = strtolower($this->string);
         $this->words = $this->allWords();

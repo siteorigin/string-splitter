@@ -10,7 +10,13 @@ class SplitterTest extends TestCase
     public function test_basic_string_splitting()
     {
         $splitter = new StringSplitter('expertsexchange');
-        dd($splitter->words());
+        $this->assertEquals(
+            [
+                'experts',
+                'exchange',
+            ],
+            $splitter->split()
+        );
     }
 
 }
