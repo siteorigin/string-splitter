@@ -23,10 +23,10 @@ class StringSplitter
     public function __construct(string $string, $options = [])
     {
         $this->options = array_merge([
-            'length_penalty' => 1.5,
+            'length_penalty' => 1.8,
             'frequency_scaling' => 1.2,
         ], $options);
-        $this->string = $string;
+        $this->string = strtolower($string);
     }
 
     /**
@@ -36,7 +36,7 @@ class StringSplitter
      */
     public function split(): array
     {
-        $string = strtolower($this->string);
+        $string = $this->string;
         $this->words = $this->allWords();
         $this->stacks = [];
 

@@ -17,5 +17,14 @@ class SplitterTest extends TestCase
             ],
             $splitter->split()
         );
+
+        $splitter = new StringSplitter('kodiakcoast');
+        $this->assertEquals(
+            [
+                'kodiak',
+                'coast',
+            ],
+            $splitter->split()
+        );
     }
 }
